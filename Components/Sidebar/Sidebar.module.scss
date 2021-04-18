@@ -1,0 +1,31 @@
+.Sidebar {
+  /* width: clamp(5rem, 25%, 30vw); */
+  flex: 1;
+  /* border-radius: 2rem; */
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6)
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+
+  &__image {
+    //   width: 100%;
+    //   height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+// &__imageHolder {
+//   width: 18rem;
+//   height: 18rem;
+//   border-radius: 50%;
+//   overflow: hidden;
+//   /* margin-top: 2rem; */
+// }

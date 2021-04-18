@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600&family=Julius+Sans+One&display=swap");
+
+// ------------------- Variables ---------------------
+$color-bg: #161616;
+$color-font: rgba(22, 22, 22, 0.8);
+
+// $circle1-shade1: #240b36;
+// $circle1-shade2: #c31432;
+
+// $circle2-shade1: rgba(255, 255, 255, 0.7);
+// $circle2-shade2: rgba(109, 213, 250, 0.8);
+// $circle2-shade3: rgba(41, 128, 185, 0.8);
+
+// $glass-shade1: rgba(255, 255, 255, 0.2);
+// $glass-shade2: rgba(255, 255, 255, 0.6);
+
+// ------------- General Style ----------------------
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 1rem = 10px; 10/16 = 62.5% */
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: $color-font;
+  font-family: "Archivo", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-family: "Archivo", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}

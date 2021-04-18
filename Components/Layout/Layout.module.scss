@@ -1,0 +1,56 @@
+/* ---------------------- The Glass Content----------------------- */
+
+.Glass {
+  width: clamp(10rem, 70vw, 70%);
+  /* width: 10rem; */
+  min-height: 80vh;
+  // background: #fff;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  border-top: 0.5px solid #fff;
+  border-left: 0.5px solid #fff;
+  box-shadow: 3px 5px 10px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  overflow: hidden;
+}
+
+/* ---------------------- Circles ---------------------------- */
+
+.circle1,
+.circle2 {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.circle1 {
+  top: 3%;
+  right: 4%;
+  height: 23rem;
+  width: 23rem;
+  background: #c31432;
+  background: linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.circle2 {
+  height: 30rem;
+  width: 30rem;
+  bottom: -6%;
+  left: 3%;
+  background: #2980b9;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.7),
+    rgba(109, 213, 250, 0.8),
+    rgba(41, 128, 185, 0.8)
+  );
+}

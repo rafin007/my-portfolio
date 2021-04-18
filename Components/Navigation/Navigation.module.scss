@@ -1,0 +1,63 @@
+.Navigation {
+  width: 100%;
+
+  ul {
+    list-style: none;
+    /* margin-top: 3rem; */
+    font-size: 1.8rem;
+    width: 100%;
+
+    li a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    li {
+      position: relative;
+      padding: 1.2rem;
+      text-align: center;
+    }
+
+    li:before,
+    li:after {
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.9)
+      );
+      transition: all 0.3s;
+      margin: auto;
+      content: ".";
+      color: transparent;
+      z-index: -1;
+      opacity: 0.75;
+    }
+
+    li:before {
+      left: 0;
+    }
+
+    li:after {
+      right: 0;
+    }
+
+    li:hover:after,
+    li:hover:before {
+      width: 100%;
+    }
+  }
+}
+
+.active {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.9)
+  );
+}
