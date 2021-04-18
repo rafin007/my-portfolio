@@ -8,13 +8,16 @@
     width: 100%;
 
     li a {
+      width: 100%;
       text-decoration: none;
       color: inherit;
+      display: block;
+      padding: 1.2rem;
     }
 
     li {
       position: relative;
-      padding: 1.2rem;
+      //   margin-top: 1.2rem;
       text-align: center;
     }
 
@@ -25,10 +28,15 @@
       height: 100%;
       top: 0;
       bottom: 0;
+      //   background: linear-gradient(
+      //     to right,
+      //     rgba(255, 255, 255, 0.3),
+      //     rgba(255, 255, 255, 0.9)
+      //   );
       background: linear-gradient(
         to right,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.9)
+        rgba(255, 255, 255, 0.8),
+        rgba(109, 213, 250, 0.3)
       );
       transition: all 0.3s;
       margin: auto;
@@ -54,10 +62,15 @@
 }
 
 .active {
-  width: 100%;
+  //   width: 100%;
+  //   background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 0.3),
+  //     rgba(255, 255, 255, 0.9)
+  //   );
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.9)
+    rgba(255, 255, 255, 0.8),
+    rgba(109, 213, 250, 0.3)
   );
 }
